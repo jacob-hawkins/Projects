@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CS452</title>
+  <meta name="description" content="Browser for CS452 Code">
+  <meta name="author" content="CS452 Student">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin: 0px; padding: 0px">
+  <div style="position: relative;">
+    <canvas id="glCanvas"></canvas>
+    <br>
+    <div class="control_area">
+      <div class="top">
+        <div class="cam_pos_sliders">
+          <p>Camera Position:</p>
+          <div>
+            <label for="camX">X:</label>
+            <input type="range" min="-100" max="100" value="1" step="0.1" class="slider" id="camX">
+            <input id="camXVal" name="camXVal" value="1">
+          </div>
+          <div>
+            <label for="camY">Y:</label>
+            <input type="range" min="-100" max="100" value="1" step="0.1" class="slider" id="camY">
+            <input id="camYVal" name="camYVal" value="1">
+          </div>
+          <div>
+            <label for="camZ">Z:</label>
+            <input type="range" min="-100" max="100" value="2.5" step="0.1" class="slider" id="camZ">
+            <input id="camZVal" name="camZVal" value="2.5">
+          </div>
+        </div>
+        
+        <div class="cam_look_sliders">
+          <p>Camera Focus:</p>
+          <div>
+            <label for="lookX">X:</label>
+            <input type="range" min="-20" max="20" value="0" step="0.1" class="slider" id="lookX">
+            <input id="lookXVal" name="lookXVal" value="0">
+          </div>
+          <div>
+            <label for="lookY">Y:</label>
+            <input type="range" min="-20" max="20" value="1" step="0.1" class="slider" id="lookY">
+            <input id="lookYVal" name="lookYVal" value="1">
+          </div>
+          <div>
+            <label for="lookZs">Z:</label>
+            <input type="range" min="-20" max="20" value="0" step="0.1" class="slider" id="lookZ">
+            <input id="lookZVal" name="lookZVal" value="0">
+          </div>
+        </div>
+      </div>
+      
+      <div class="bottom">
+        <input type="checkbox" id="rotate" name="rotate" onclick="rotate()">
+        <label for="rotate">Rotate model</label>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let canvas = document.getElementById("glCanvas");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  </script>
+
+  <!-- If you add a file, make sure to include it here! -->
+  <script src="js/main.js"></script>
+  <script src="js/shader.js"></script>
+  <script src="js/vertex-data.js"></script>
+  <script src="js/drawable.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/obj-loader.js"></script>
+  <script src="js/texture_mapping.js"></script>
+  <!-- http://glmatrix.net/docs/ -->
+  <script src="js/gl-matrix-min.js"></script>
+</body>
+</html>

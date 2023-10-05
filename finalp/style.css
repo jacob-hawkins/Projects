@@ -1,0 +1,136 @@
+#glCanvas {
+    position: absolute;
+}
+
+.control_area {
+    width: 500px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.bottom {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .control_area {
+        flex-direction: column;
+        width: 75%;
+        top:100vh;
+    }
+}
+
+.cam_pos_sliders {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#camX {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#camY {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#camZ {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#camXVal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e74c3c;
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+#camYVal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e74c3c;
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+#camZVal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e74c3c;
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+.cam_look_sliders {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#lookX {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#lookY {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#lookZ {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#lookXVal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e74c3c;
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+#lookYVal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e74c3c;
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+#lookZVal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e74c3c;
+    background: none;
+    color: white;
+    text-align: center;
+}
