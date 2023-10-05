@@ -1,0 +1,110 @@
+.main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Archivo', sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+    border: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+#googleLogo {
+    width: 18px;
+    margin-right: 5px;
+}
+
+#apple {
+    margin-bottom: 0;
+}
+
+#appleLogo {
+    margin-right: 5px;
+}
+
+.orSection {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.orSection p {
+    padding: 0 10px;
+}
+
+.orSection hr {
+    width: 150px;
+    color:rgb(51, 54, 57)
+}
+
+#username {
+    background: none;
+    color: rgb(114, 118, 122);
+    border: 1px solid rgb(51, 54, 57);
+    border-radius: 5px;
+    height: 40px;
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#username:focus {
+    outline: none;
+    border: 1px solid rgb(70, 155, 233);
+    color: white;
+}
+
+#forgotPassword {
+    background: none;
+    color: white;
+    border: 1px solid rgb(51, 54, 57);
+}
+
+#forgotPassword:hover {
+    background-color: rgb(24, 25, 25);
+}
+
+#noAccountText {
+    color: rgb(114, 118, 122);
+    margin-top: 50px;
+}
+
+#noAccountLink {
+    text-decoration: none;
+    color: rgb(70, 155, 233);
+    margin-left: 5px;
+}

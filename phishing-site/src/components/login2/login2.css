@@ -1,0 +1,76 @@
+.login2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Archivo', sans-serif;
+}
+
+.login2wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.login2wrapper form {
+    width: 100%;
+}
+
+.input1 {
+    color: rgb(56, 59, 61);
+    background-color: rgb(16, 17, 19);
+    border-radius: 5px;
+    height: 40px;
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#input1user {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.input1 p {
+    margin: 0;
+}
+
+.input2 {
+    background: none;
+    color: rgb(114, 118, 122);
+    border: 1px solid rgb(51, 54, 57);
+    border-radius: 5px;
+    height: 40px;
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.input2:focus {
+    outline: none;
+    border: 1px solid rgb(70, 155, 233);
+    color: white;
+}
+
+#passwordLink {
+    text-decoration: none;
+    color: rgb(70, 155, 233);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#passwordButton {
+    margin-top: 225px;
+    height: 50px;
+    font-size: 18px;
+}
+
+#noAccountTextPassword {
+    color: rgb(114, 118, 122);
+}
+
+#noAccountLinkPassword {
+    text-decoration: none;
+    color: rgb(70, 155, 233);
+    margin-left: 5px;
+}

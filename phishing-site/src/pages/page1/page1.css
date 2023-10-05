@@ -1,0 +1,60 @@
+body {
+    background-color: #20282d;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainbox {
+    background-color: black;
+    color: white;
+    height: clamp(500px, 85vh, 85vh);
+    width: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closebutton {
+    flex: 1;
+    text-align: center;
+}
+
+#close {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    border-radius: 50px;
+    margin: 5px;
+    color: white;
+}
+
+#close:hover {
+    background-color: #181919;
+}
+
+#twitterIcon {
+    flex: 15;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-15px);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
